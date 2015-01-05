@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 272.0, 78.0, 1374.0, 934.0 ],
+		"rect" : [ 81.0, 350.0, 1374.0, 934.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -953,7 +953,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1860.399902, 296.900024, 222.0, 25.0 ],
 					"style" : "",
-					"text" : "0. 0. 0.000001"
+					"text" : "0. 0. 0.000003"
 				}
 
 			}
@@ -22055,7 +22055,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-106",
@@ -22133,7 +22132,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 311.0, 442.0, 150.0, 25.0 ],
 									"style" : "",
-									"text" : "0. 0. 0.000001"
+									"text" : "0. 0. 0.000003"
 								}
 
 							}
@@ -24477,7 +24476,7 @@
 											}
 , 											{
 												"box" : 												{
-													"code" : "// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\n\n// rotate_value_calculated = vec(rotate_amount.x * TWOPI, rotate_amount.y * TWOPI, rotate_amount.z * TWOPI);\n\ntranslate_array = (in1 * scale_amount) + travel;\r\n// translate_array = in1 + travel;\n\nch = cos(heading);\nsh = sin(heading);\nca = cos(attitude);\nsa = sin(attitude);\ncb = cos(bank);\nsb = sin(bank);\n\n/*   Original Matrix Calculations Z1Y2X3\nrotate_array = vec(\n\tch*cb*translate_array.x+(sa*sh*cb-ca*sb)*translate_array.y+(ca*sh*cb+sa*sb)*translate_array.z,\n\tch*sb*translate_array.x+(sa*sh*sb+ca*cb)*translate_array.y+(ca*sh*sb-sa*cb)*translate_array.z, \n\t(sh*-1.)*translate_array.x+sa*ch*translate_array.y+ca*ch*translate_array.z);\r\n*/\r\n\n/*  Matrix Calcs found online\r\nrotate_1 = vec(ch * ca, sh*sb - ch*sa*cb, ch*sa*sb + sh*cb);\nrotate_2 = vec(sa, ca*cb, -ca*sb);\nrotate_3 = vec(-sh*ca, sh*sa*cb + ch*sb, -sh*sa*sb + ch*cb);\r\n*/\r\n\n/*\tY1Z2X3 - X rotates around Z, Y around Y, Z around X\r\nrotate_array = vec(\n\t(ch * ca)*translate_array.x+(sh*sb - ch*sa*cb)*translate_array.y+(ch*sa*sb + sh*cb)*translate_array.z,\n\t(sa)*translate_array.x+(ca*cb)*translate_array.y+(-ca*sb)*translate_array.z, \n\t(-sh*ca)*translate_array.x+(sh*sa*cb + ch*sb)*translate_array.y+(-sh*sa*sb + ch*cb)*translate_array.z);\r\n*/\r\n\r\n/* Y1X2Z3 - X rotates around X, Y around Z, Z around Y\r\nrotate_array = vec(\r\n\t(ch*cb+sh*sa*sb)*translate_array.x+(ch*sa*sb+cb*sh)*translate_array.y+(-ca*sb)*translate_array.z,\n\t(-ca*sh)*translate_array.x+(ch*ca)*translate_array.y+(sa)*translate_array.z, \n\t(cb*sh*sa+ch*sb)*translate_array.x+(sh*sb-ch*cb*sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n*/\r\n\r\n/* X1Z2Y3 - X rotates around Z, Y around X, Z around Y\r\nrotate_array = vec(\r\n\t(cb * ca)*translate_array.x+(-sa)*translate_array.y+(ca*sb)*translate_array.z,\n\t(sh*sb + ch*cb*sa)*translate_array.x+(ch*ca)*translate_array.y+(ch*sa*sb - cb*sh)*translate_array.z, \n\t(cb*sh*sa - ch*sb)*translate_array.x+(ca*sh)*translate_array.y+(ch*cb + sh*sa*sb)*translate_array.z);\r\n*/\r\n\r\n// X1Y2Z3 - X rotates around Y, Y around X, Z around Z\nrotate_array = vec(\n\t(ca*cb)*translate_array.x+(-ca*sb)*translate_array.y+(sa)*translate_array.z,\n\t(ch*sb+cb*sh*sa)*translate_array.x+(ch*cb-sh*sa*sb)*translate_array.y+(-ca*sh)*translate_array.z, \n\t(sh*sb-ch*cb*sa)*translate_array.x+(cb*sh+ch*sa*sb)*translate_array.y+(ch*ca)*translate_array.z);\n//\r\n\r\n/* Z1X2Y3 - swapped up Z/Y\r\nrotate_array = vec(\r\n\t(ch*cb-sh*sa*sb)*translate_array.x+(-ca*sh)*translate_array.y+(ch*sb+cb*sh*sa)*translate_array.z,\n\t(cb*sh+ch*sa*sb)*translate_array.x+(ch*ca)*translate_array.y+(sh*sb-ch*cb*sa)*translate_array.z, \n\t(-ca*sb)*translate_array.x+(sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n*/\r\n\r\n/* Z1Y2X3 - X rotates around Y, Y around Z, Z around X\nrotate_array = vec(\n\t(ch*ca)*translate_array.x+(ch*sa*sb-cb*sh)*translate_array.y+(sh*sb+ch*cb*sa)*translate_array.z,\n\t(ca*sh)*translate_array.x+(ch*cb+sh*sa*sb)*translate_array.y+(cb*sh*sa-ch*sb)*translate_array.z, \n\t(-sa)*translate_array.x+(ca*sb)*translate_array.y+(ca*cb)*translate_array.z);\n*/\r\n\r\n//////\r\n\r\n/* X1Z2X3 - X rotates around Z, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(-cb*sa)*translate_array.y+(sa*sb)*translate_array.z,\n\t(ch*sa)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-cb*sh-ch*ca*sb)*translate_array.z, \n\t(sh*sa)*translate_array.x+(ch*sb+ca*cb*sh)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n*/\n\n/* X1Y2X3 - X rotates around Y, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(sa*sb)*translate_array.y+(cb*sa)*translate_array.z,\n\t(sh*sa)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(-ch*sb-ca*cb*sh)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(cb*sh+ch*ca*sb)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n*/\n\n/* Y1X2Y3 - X rotates around X, Y around Y, Z around Y So Close!!!!!!\nrotate_array = vec(\n\t(ch*cb-ca*sh*sb)*translate_array.x+(sh*sa)*translate_array.y+(ch*sb+ca*cb*sh)*translate_array.z,\n\t(sa*sb)*translate_array.x+(ca)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(-cb*sh-ch*ca*sb)*translate_array.x+(ch*sa)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n*/\n\n/* Y1Z2Y3 - X rotates around Z, Y around Y, Z around Y\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-ch*sa)*translate_array.y+(cb*sh+ch*ca*sb)*translate_array.z,\n\t(cb*sa)*translate_array.x+(ca)*translate_array.y+(sa*sb)*translate_array.z, \n\t(-ch*sb-ca*cb*sh)*translate_array.x+(sh*sa)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n*/\n\n/* Z1Y2Z3 - X rotates around Y, Y around Z, Z around Z\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-cb*sh-ch*ca*sb)*translate_array.y+(ch*sa)*translate_array.z,\n\t(ch*sb+ca*cb*sh)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(sh*sa)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(sa*sb)*translate_array.y+(ca)*translate_array.z);\n*/\r\n\r\n/* Z1X2Z3 - X rotates around X, Y around Z, Z around Z  So Close!!!!\r\nrotate_array = vec(\r\n\t(ch*cb-ca*sh*sb)*translate_array.x+(-ch*sb-ca*cb*sh)*translate_array.y+(sh*sa)*translate_array.z,\n\t(cb*sh+ch*ca*sb)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(sa*sb)*translate_array.x+(cb*sa)*translate_array.y+(ca)*translate_array.z);\r\n*/\n\n\r\n\r\nrotate_array = rotate_array + translate_amount;\r\n\nout1 = rotate_array;\n",
+													"code" : "// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\n\n// rotate_value_calculated = vec(rotate_amount.x * TWOPI, rotate_amount.y * TWOPI, rotate_amount.z * TWOPI);\n\ntranslate_array = (in1 * scale_amount) + travel;\r\n// translate_array = in1 + travel;\n\nch = cos(heading);\nsh = sin(heading);\nca = cos(attitude);\nsa = sin(attitude);\ncb = cos(bank);\nsb = sin(bank);\n\n/*   Original Matrix Calculations Z1Y2X3\nrotate_array = vec(\n\tch*cb*translate_array.x+(sa*sh*cb-ca*sb)*translate_array.y+(ca*sh*cb+sa*sb)*translate_array.z,\n\tch*sb*translate_array.x+(sa*sh*sb+ca*cb)*translate_array.y+(ca*sh*sb-sa*cb)*translate_array.z, \n\t(sh*-1.)*translate_array.x+sa*ch*translate_array.y+ca*ch*translate_array.z);\r\n// */\r\n\n/*  Matrix Calcs found online\r\nrotate_1 = vec(ch * ca, sh*sb - ch*sa*cb, ch*sa*sb + sh*cb);\nrotate_2 = vec(sa, ca*cb, -ca*sb);\nrotate_3 = vec(-sh*ca, sh*sa*cb + ch*sb, -sh*sa*sb + ch*cb);\r\n// */\r\n\n/*\tY1Z2X3 - X rotates around Z, Y around Y, Z around X\r\nrotate_array = vec(\n\t(ch * ca)*translate_array.x+(sh*sb - ch*sa*cb)*translate_array.y+(ch*sa*sb + sh*cb)*translate_array.z,\n\t(sa)*translate_array.x+(ca*cb)*translate_array.y+(-ca*sb)*translate_array.z, \n\t(-sh*ca)*translate_array.x+(sh*sa*cb + ch*sb)*translate_array.y+(-sh*sa*sb + ch*cb)*translate_array.z);\r\n// */\r\n\r\n/* Y1X2Z3 - X rotates around X, Y around Z, Z around Y\r\nrotate_array = vec(\r\n\t(ch*cb+sh*sa*sb)*translate_array.x+(ch*sa*sb+cb*sh)*translate_array.y+(-ca*sb)*translate_array.z,\n\t(-ca*sh)*translate_array.x+(ch*ca)*translate_array.y+(sa)*translate_array.z, \n\t(cb*sh*sa+ch*sb)*translate_array.x+(sh*sb-ch*cb*sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n// */\r\n\r\n/* X1Z2Y3 - X rotates around Z, Y around X, Z around Y\r\nrotate_array = vec(\r\n\t(cb * ca)*translate_array.x+(-sa)*translate_array.y+(ca*sb)*translate_array.z,\n\t(sh*sb + ch*cb*sa)*translate_array.x+(ch*ca)*translate_array.y+(ch*sa*sb - cb*sh)*translate_array.z, \n\t(cb*sh*sa - ch*sb)*translate_array.x+(ca*sh)*translate_array.y+(ch*cb + sh*sa*sb)*translate_array.z);\r\n// */\r\n\r\n/* X1Y2Z3 - X rotates around Y, Y around X, Z around Z\nrotate_array = vec(\n\t(ca*cb)*translate_array.x+(-ca*sb)*translate_array.y+(sa)*translate_array.z,\n\t(ch*sb+cb*sh*sa)*translate_array.x+(ch*cb-sh*sa*sb)*translate_array.y+(-ca*sh)*translate_array.z, \n\t(sh*sb-ch*cb*sa)*translate_array.x+(cb*sh+ch*sa*sb)*translate_array.y+(ch*ca)*translate_array.z);\n// */\r\n\r\n/* Z1X2Y3 - swapped up Z/Y\r\nrotate_array = vec(\r\n\t(ch*cb-sh*sa*sb)*translate_array.x+(-ca*sh)*translate_array.y+(ch*sb+cb*sh*sa)*translate_array.z,\n\t(cb*sh+ch*sa*sb)*translate_array.x+(ch*ca)*translate_array.y+(sh*sb-ch*cb*sa)*translate_array.z, \n\t(-ca*sb)*translate_array.x+(sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n// */\r\n\r\n/* Z1Y2X3 - X rotates around Y, Y around Z, Z around X\nrotate_array = vec(\n\t(ch*ca)*translate_array.x+(ch*sa*sb-cb*sh)*translate_array.y+(sh*sb+ch*cb*sa)*translate_array.z,\n\t(ca*sh)*translate_array.x+(ch*cb+sh*sa*sb)*translate_array.y+(cb*sh*sa-ch*sb)*translate_array.z, \n\t(-sa)*translate_array.x+(ca*sb)*translate_array.y+(ca*cb)*translate_array.z);\n// */\r\n\r\n//////\r\n\r\n/* X1Z2X3 - X rotates around Z, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(-cb*sa)*translate_array.y+(sa*sb)*translate_array.z,\n\t(ch*sa)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-cb*sh-ch*ca*sb)*translate_array.z, \n\t(sh*sa)*translate_array.x+(ch*sb+ca*cb*sh)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n// */\n\n/* X1Y2X3 - X rotates around Y, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(sa*sb)*translate_array.y+(cb*sa)*translate_array.z,\n\t(sh*sa)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(-ch*sb-ca*cb*sh)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(cb*sh+ch*ca*sb)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n// */\n\n// Y1X2Y3 - X rotates around X, Y around Y, Z around Y So Close!!!!!!\nrotate_array = vec(\n\t(ch*cb-ca*sh*sb)*translate_array.x+(sh*sa)*translate_array.y+(ch*sb+ca*cb*sh)*translate_array.z,\n\t(sa*sb)*translate_array.x+(ca)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(-cb*sh-ch*ca*sb)*translate_array.x+(ch*sa)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n// */\n\n/* Y1Z2Y3 - X rotates around Z, Y around Y, Z around Y\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-ch*sa)*translate_array.y+(cb*sh+ch*ca*sb)*translate_array.z,\n\t(cb*sa)*translate_array.x+(ca)*translate_array.y+(sa*sb)*translate_array.z, \n\t(-ch*sb-ca*cb*sh)*translate_array.x+(sh*sa)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n// */\n\n/* Z1Y2Z3 - X rotates around Y, Y around Z, Z around Z\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-cb*sh-ch*ca*sb)*translate_array.y+(ch*sa)*translate_array.z,\n\t(ch*sb+ca*cb*sh)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(sh*sa)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(sa*sb)*translate_array.y+(ca)*translate_array.z);\n// */\r\n\r\n/* Z1X2Z3 - X rotates around X, Y around Z, Z around Z  So Close!!!!\r\nrotate_array = vec(\r\n\t(ch*cb-ca*sh*sb)*translate_array.x+(-ch*sb-ca*cb*sh)*translate_array.y+(sh*sa)*translate_array.z,\n\t(cb*sh+ch*ca*sb)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(sa*sb)*translate_array.x+(cb*sa)*translate_array.y+(ca)*translate_array.z);\r\n// */\n\n\r\n\r\nrotate_array = rotate_array + translate_amount;\r\n\nout1 = rotate_array;\n",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -24871,7 +24870,7 @@
 											}
 , 											{
 												"box" : 												{
-													"code" : "// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\n\n// rotate_value_calculated = vec(rotate_amount.x * TWOPI, rotate_amount.y * TWOPI, rotate_amount.z * TWOPI);\n\ntranslate_array = (in1 * scale_amount) + travel;\r\n// translate_array = in1 + travel;\n\nch = cos(heading);\nsh = sin(heading);\nca = cos(attitude);\nsa = sin(attitude);\ncb = cos(bank);\nsb = sin(bank);\n\n/*   Original Matrix Calculations Z1Y2X3\nrotate_array = vec(\n\tch*cb*translate_array.x+(sa*sh*cb-ca*sb)*translate_array.y+(ca*sh*cb+sa*sb)*translate_array.z,\n\tch*sb*translate_array.x+(sa*sh*sb+ca*cb)*translate_array.y+(ca*sh*sb-sa*cb)*translate_array.z, \n\t(sh*-1.)*translate_array.x+sa*ch*translate_array.y+ca*ch*translate_array.z);\r\n*/\r\n\n/*  Matrix Calcs found online\r\nrotate_1 = vec(ch * ca, sh*sb - ch*sa*cb, ch*sa*sb + sh*cb);\nrotate_2 = vec(sa, ca*cb, -ca*sb);\nrotate_3 = vec(-sh*ca, sh*sa*cb + ch*sb, -sh*sa*sb + ch*cb);\r\n*/\r\n\n/*\tY1Z2X3 - X rotates around Z, Y around Y, Z around X\r\nrotate_array = vec(\n\t(ch * ca)*translate_array.x+(sh*sb - ch*sa*cb)*translate_array.y+(ch*sa*sb + sh*cb)*translate_array.z,\n\t(sa)*translate_array.x+(ca*cb)*translate_array.y+(-ca*sb)*translate_array.z, \n\t(-sh*ca)*translate_array.x+(sh*sa*cb + ch*sb)*translate_array.y+(-sh*sa*sb + ch*cb)*translate_array.z);\r\n*/\r\n\r\n/* Y1X2Z3 - X rotates around X, Y around Z, Z around Y\r\nrotate_array = vec(\r\n\t(ch*cb+sh*sa*sb)*translate_array.x+(ch*sa*sb+cb*sh)*translate_array.y+(-ca*sb)*translate_array.z,\n\t(-ca*sh)*translate_array.x+(ch*ca)*translate_array.y+(sa)*translate_array.z, \n\t(cb*sh*sa+ch*sb)*translate_array.x+(sh*sb-ch*cb*sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n*/\r\n\r\n/* X1Z2Y3 - X rotates around Z, Y around X, Z around Y\r\nrotate_array = vec(\r\n\t(cb * ca)*translate_array.x+(-sa)*translate_array.y+(ca*sb)*translate_array.z,\n\t(sh*sb + ch*cb*sa)*translate_array.x+(ch*ca)*translate_array.y+(ch*sa*sb - cb*sh)*translate_array.z, \n\t(cb*sh*sa - ch*sb)*translate_array.x+(ca*sh)*translate_array.y+(ch*cb + sh*sa*sb)*translate_array.z);\r\n*/\r\n\r\n// X1Y2Z3 - X rotates around Y, Y around X, Z around Z\nrotate_array = vec(\n\t(ca*cb)*translate_array.x+(-ca*sb)*translate_array.y+(sa)*translate_array.z,\n\t(ch*sb+cb*sh*sa)*translate_array.x+(ch*cb-sh*sa*sb)*translate_array.y+(-ca*sh)*translate_array.z, \n\t(sh*sb-ch*cb*sa)*translate_array.x+(cb*sh+ch*sa*sb)*translate_array.y+(ch*ca)*translate_array.z);\n//\r\n\r\n/* Z1X2Y3 - swapped up Z/Y\r\nrotate_array = vec(\r\n\t(ch*cb-sh*sa*sb)*translate_array.x+(-ca*sh)*translate_array.y+(ch*sb+cb*sh*sa)*translate_array.z,\n\t(cb*sh+ch*sa*sb)*translate_array.x+(ch*ca)*translate_array.y+(sh*sb-ch*cb*sa)*translate_array.z, \n\t(-ca*sb)*translate_array.x+(sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n*/\r\n\r\n/* Z1Y2X3 - X rotates around Y, Y around Z, Z around X\nrotate_array = vec(\n\t(ch*ca)*translate_array.x+(ch*sa*sb-cb*sh)*translate_array.y+(sh*sb+ch*cb*sa)*translate_array.z,\n\t(ca*sh)*translate_array.x+(ch*cb+sh*sa*sb)*translate_array.y+(cb*sh*sa-ch*sb)*translate_array.z, \n\t(-sa)*translate_array.x+(ca*sb)*translate_array.y+(ca*cb)*translate_array.z);\n*/\r\n\r\n//////\r\n\r\n/* X1Z2X3 - X rotates around Z, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(-cb*sa)*translate_array.y+(sa*sb)*translate_array.z,\n\t(ch*sa)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-cb*sh-ch*ca*sb)*translate_array.z, \n\t(sh*sa)*translate_array.x+(ch*sb+ca*cb*sh)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n*/\n\n/* X1Y2X3 - X rotates around Y, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(sa*sb)*translate_array.y+(cb*sa)*translate_array.z,\n\t(sh*sa)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(-ch*sb-ca*cb*sh)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(cb*sh+ch*ca*sb)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n*/\n\n/* Y1X2Y3 - X rotates around X, Y around Y, Z around Y So Close!!!!!!\nrotate_array = vec(\n\t(ch*cb-ca*sh*sb)*translate_array.x+(sh*sa)*translate_array.y+(ch*sb+ca*cb*sh)*translate_array.z,\n\t(sa*sb)*translate_array.x+(ca)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(-cb*sh-ch*ca*sb)*translate_array.x+(ch*sa)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n*/\n\n/* Y1Z2Y3 - X rotates around Z, Y around Y, Z around Y\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-ch*sa)*translate_array.y+(cb*sh+ch*ca*sb)*translate_array.z,\n\t(cb*sa)*translate_array.x+(ca)*translate_array.y+(sa*sb)*translate_array.z, \n\t(-ch*sb-ca*cb*sh)*translate_array.x+(sh*sa)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n*/\n\n/* Z1Y2Z3 - X rotates around Y, Y around Z, Z around Z\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-cb*sh-ch*ca*sb)*translate_array.y+(ch*sa)*translate_array.z,\n\t(ch*sb+ca*cb*sh)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(sh*sa)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(sa*sb)*translate_array.y+(ca)*translate_array.z);\n*/\r\n\r\n/* Z1X2Z3 - X rotates around X, Y around Z, Z around Z  So Close!!!!\r\nrotate_array = vec(\r\n\t(ch*cb-ca*sh*sb)*translate_array.x+(-ch*sb-ca*cb*sh)*translate_array.y+(sh*sa)*translate_array.z,\n\t(cb*sh+ch*ca*sb)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(sa*sb)*translate_array.x+(cb*sa)*translate_array.y+(ca)*translate_array.z);\r\n*/\n\n\r\n\r\nrotate_array = rotate_array + translate_amount;\r\n\nout1 = rotate_array;\n",
+													"code" : "// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\n\n// rotate_value_calculated = vec(rotate_amount.x * TWOPI, rotate_amount.y * TWOPI, rotate_amount.z * TWOPI);\n\ntranslate_array = (in1 * scale_amount) + travel;\r\n// translate_array = in1 + travel;\n\nch = cos(heading);\nsh = sin(heading);\nca = cos(attitude);\nsa = sin(attitude);\ncb = cos(bank);\nsb = sin(bank);\n\n/*   Original Matrix Calculations Z1Y2X3\nrotate_array = vec(\n\tch*cb*translate_array.x+(sa*sh*cb-ca*sb)*translate_array.y+(ca*sh*cb+sa*sb)*translate_array.z,\n\tch*sb*translate_array.x+(sa*sh*sb+ca*cb)*translate_array.y+(ca*sh*sb-sa*cb)*translate_array.z, \n\t(sh*-1.)*translate_array.x+sa*ch*translate_array.y+ca*ch*translate_array.z);\r\n// */\r\n\n/*  Matrix Calcs found online\r\nrotate_1 = vec(ch * ca, sh*sb - ch*sa*cb, ch*sa*sb + sh*cb);\nrotate_2 = vec(sa, ca*cb, -ca*sb);\nrotate_3 = vec(-sh*ca, sh*sa*cb + ch*sb, -sh*sa*sb + ch*cb);\r\n// */\r\n\n/*\tY1Z2X3 - X rotates around Z, Y around Y, Z around X\r\nrotate_array = vec(\n\t(ch * ca)*translate_array.x+(sh*sb - ch*sa*cb)*translate_array.y+(ch*sa*sb + sh*cb)*translate_array.z,\n\t(sa)*translate_array.x+(ca*cb)*translate_array.y+(-ca*sb)*translate_array.z, \n\t(-sh*ca)*translate_array.x+(sh*sa*cb + ch*sb)*translate_array.y+(-sh*sa*sb + ch*cb)*translate_array.z);\r\n// */\r\n\r\n/* Y1X2Z3 - X rotates around X, Y around Z, Z around Y\r\nrotate_array = vec(\r\n\t(ch*cb+sh*sa*sb)*translate_array.x+(ch*sa*sb+cb*sh)*translate_array.y+(-ca*sb)*translate_array.z,\n\t(-ca*sh)*translate_array.x+(ch*ca)*translate_array.y+(sa)*translate_array.z, \n\t(cb*sh*sa+ch*sb)*translate_array.x+(sh*sb-ch*cb*sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n// */\r\n\r\n/* X1Z2Y3 - X rotates around Z, Y around X, Z around Y\r\nrotate_array = vec(\r\n\t(cb * ca)*translate_array.x+(-sa)*translate_array.y+(ca*sb)*translate_array.z,\n\t(sh*sb + ch*cb*sa)*translate_array.x+(ch*ca)*translate_array.y+(ch*sa*sb - cb*sh)*translate_array.z, \n\t(cb*sh*sa - ch*sb)*translate_array.x+(ca*sh)*translate_array.y+(ch*cb + sh*sa*sb)*translate_array.z);\r\n// */\r\n\r\n/* X1Y2Z3 - X rotates around Y, Y around X, Z around Z\nrotate_array = vec(\n\t(ca*cb)*translate_array.x+(-ca*sb)*translate_array.y+(sa)*translate_array.z,\n\t(ch*sb+cb*sh*sa)*translate_array.x+(ch*cb-sh*sa*sb)*translate_array.y+(-ca*sh)*translate_array.z, \n\t(sh*sb-ch*cb*sa)*translate_array.x+(cb*sh+ch*sa*sb)*translate_array.y+(ch*ca)*translate_array.z);\n// */\r\n\r\n/* Z1X2Y3 - swapped up Z/Y\r\nrotate_array = vec(\r\n\t(ch*cb-sh*sa*sb)*translate_array.x+(-ca*sh)*translate_array.y+(ch*sb+cb*sh*sa)*translate_array.z,\n\t(cb*sh+ch*sa*sb)*translate_array.x+(ch*ca)*translate_array.y+(sh*sb-ch*cb*sa)*translate_array.z, \n\t(-ca*sb)*translate_array.x+(sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n// */\r\n\r\n/* Z1Y2X3 - X rotates around Y, Y around Z, Z around X\nrotate_array = vec(\n\t(ch*ca)*translate_array.x+(ch*sa*sb-cb*sh)*translate_array.y+(sh*sb+ch*cb*sa)*translate_array.z,\n\t(ca*sh)*translate_array.x+(ch*cb+sh*sa*sb)*translate_array.y+(cb*sh*sa-ch*sb)*translate_array.z, \n\t(-sa)*translate_array.x+(ca*sb)*translate_array.y+(ca*cb)*translate_array.z);\n// */\r\n\r\n//////\r\n\r\n/* X1Z2X3 - X rotates around Z, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(-cb*sa)*translate_array.y+(sa*sb)*translate_array.z,\n\t(ch*sa)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-cb*sh-ch*ca*sb)*translate_array.z, \n\t(sh*sa)*translate_array.x+(ch*sb+ca*cb*sh)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n// */\n\n/* X1Y2X3 - X rotates around Y, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(sa*sb)*translate_array.y+(cb*sa)*translate_array.z,\n\t(sh*sa)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(-ch*sb-ca*cb*sh)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(cb*sh+ch*ca*sb)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n// */\n\n// Y1X2Y3 - X rotates around X, Y around Y, Z around Y So Close!!!!!!\nrotate_array = vec(\n\t(ch*cb-ca*sh*sb)*translate_array.x+(sh*sa)*translate_array.y+(ch*sb+ca*cb*sh)*translate_array.z,\n\t(sa*sb)*translate_array.x+(ca)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(-cb*sh-ch*ca*sb)*translate_array.x+(ch*sa)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n// */\n\n/* Y1Z2Y3 - X rotates around Z, Y around Y, Z around Y\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-ch*sa)*translate_array.y+(cb*sh+ch*ca*sb)*translate_array.z,\n\t(cb*sa)*translate_array.x+(ca)*translate_array.y+(sa*sb)*translate_array.z, \n\t(-ch*sb-ca*cb*sh)*translate_array.x+(sh*sa)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n// */\n\n/* Z1Y2Z3 - X rotates around Y, Y around Z, Z around Z\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-cb*sh-ch*ca*sb)*translate_array.y+(ch*sa)*translate_array.z,\n\t(ch*sb+ca*cb*sh)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(sh*sa)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(sa*sb)*translate_array.y+(ca)*translate_array.z);\n// */\r\n\r\n/* Z1X2Z3 - X rotates around X, Y around Z, Z around Z  So Close!!!!\r\nrotate_array = vec(\r\n\t(ch*cb-ca*sh*sb)*translate_array.x+(-ch*sb-ca*cb*sh)*translate_array.y+(sh*sa)*translate_array.z,\n\t(cb*sh+ch*ca*sb)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(sa*sb)*translate_array.x+(cb*sa)*translate_array.y+(ca)*translate_array.z);\r\n// */\n\n\r\n\r\nrotate_array = rotate_array + translate_amount;\r\n\nout1 = rotate_array;\n",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -25325,7 +25324,7 @@
 											}
 , 											{
 												"box" : 												{
-													"code" : "// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\n\n// rotate_value_calculated = vec(rotate_amount.x * TWOPI, rotate_amount.y * TWOPI, rotate_amount.z * TWOPI);\n\ntranslate_array = (in1 * scale_amount) + travel;\r\n// translate_array = in1 + travel;\n\nch = cos(heading);\nsh = sin(heading);\nca = cos(attitude);\nsa = sin(attitude);\ncb = cos(bank);\nsb = sin(bank);\n\n/*   Original Matrix Calculations Z1Y2X3\nrotate_array = vec(\n\tch*cb*translate_array.x+(sa*sh*cb-ca*sb)*translate_array.y+(ca*sh*cb+sa*sb)*translate_array.z,\n\tch*sb*translate_array.x+(sa*sh*sb+ca*cb)*translate_array.y+(ca*sh*sb-sa*cb)*translate_array.z, \n\t(sh*-1.)*translate_array.x+sa*ch*translate_array.y+ca*ch*translate_array.z);\r\n*/\r\n\n/*  Matrix Calcs found online\r\nrotate_1 = vec(ch * ca, sh*sb - ch*sa*cb, ch*sa*sb + sh*cb);\nrotate_2 = vec(sa, ca*cb, -ca*sb);\nrotate_3 = vec(-sh*ca, sh*sa*cb + ch*sb, -sh*sa*sb + ch*cb);\r\n*/\r\n\n/*\tY1Z2X3 - X rotates around Z, Y around Y, Z around X\r\nrotate_array = vec(\n\t(ch * ca)*translate_array.x+(sh*sb - ch*sa*cb)*translate_array.y+(ch*sa*sb + sh*cb)*translate_array.z,\n\t(sa)*translate_array.x+(ca*cb)*translate_array.y+(-ca*sb)*translate_array.z, \n\t(-sh*ca)*translate_array.x+(sh*sa*cb + ch*sb)*translate_array.y+(-sh*sa*sb + ch*cb)*translate_array.z);\r\n*/\r\n\r\n/* Y1X2Z3 - X rotates around X, Y around Z, Z around Y\r\nrotate_array = vec(\r\n\t(ch*cb+sh*sa*sb)*translate_array.x+(ch*sa*sb+cb*sh)*translate_array.y+(-ca*sb)*translate_array.z,\n\t(-ca*sh)*translate_array.x+(ch*ca)*translate_array.y+(sa)*translate_array.z, \n\t(cb*sh*sa+ch*sb)*translate_array.x+(sh*sb-ch*cb*sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n*/\r\n\r\n/* X1Z2Y3 - X rotates around Z, Y around X, Z around Y\r\nrotate_array = vec(\r\n\t(cb * ca)*translate_array.x+(-sa)*translate_array.y+(ca*sb)*translate_array.z,\n\t(sh*sb + ch*cb*sa)*translate_array.x+(ch*ca)*translate_array.y+(ch*sa*sb - cb*sh)*translate_array.z, \n\t(cb*sh*sa - ch*sb)*translate_array.x+(ca*sh)*translate_array.y+(ch*cb + sh*sa*sb)*translate_array.z);\r\n*/\r\n\r\n// X1Y2Z3 - X rotates around Y, Y around X, Z around Z\nrotate_array = vec(\n\t(ca*cb)*translate_array.x+(-ca*sb)*translate_array.y+(sa)*translate_array.z,\n\t(ch*sb+cb*sh*sa)*translate_array.x+(ch*cb-sh*sa*sb)*translate_array.y+(-ca*sh)*translate_array.z, \n\t(sh*sb-ch*cb*sa)*translate_array.x+(cb*sh+ch*sa*sb)*translate_array.y+(ch*ca)*translate_array.z);\n//\r\n\r\n/* Z1X2Y3 - swapped up Z/Y\r\nrotate_array = vec(\r\n\t(ch*cb-sh*sa*sb)*translate_array.x+(-ca*sh)*translate_array.y+(ch*sb+cb*sh*sa)*translate_array.z,\n\t(cb*sh+ch*sa*sb)*translate_array.x+(ch*ca)*translate_array.y+(sh*sb-ch*cb*sa)*translate_array.z, \n\t(-ca*sb)*translate_array.x+(sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n*/\r\n\r\n/* Z1Y2X3 - X rotates around Y, Y around Z, Z around X\nrotate_array = vec(\n\t(ch*ca)*translate_array.x+(ch*sa*sb-cb*sh)*translate_array.y+(sh*sb+ch*cb*sa)*translate_array.z,\n\t(ca*sh)*translate_array.x+(ch*cb+sh*sa*sb)*translate_array.y+(cb*sh*sa-ch*sb)*translate_array.z, \n\t(-sa)*translate_array.x+(ca*sb)*translate_array.y+(ca*cb)*translate_array.z);\n*/\r\n\r\n//////\r\n\r\n/* X1Z2X3 - X rotates around Z, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(-cb*sa)*translate_array.y+(sa*sb)*translate_array.z,\n\t(ch*sa)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-cb*sh-ch*ca*sb)*translate_array.z, \n\t(sh*sa)*translate_array.x+(ch*sb+ca*cb*sh)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n*/\n\n/* X1Y2X3 - X rotates around Y, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(sa*sb)*translate_array.y+(cb*sa)*translate_array.z,\n\t(sh*sa)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(-ch*sb-ca*cb*sh)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(cb*sh+ch*ca*sb)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n*/\n\n/* Y1X2Y3 - X rotates around X, Y around Y, Z around Y So Close!!!!!!\nrotate_array = vec(\n\t(ch*cb-ca*sh*sb)*translate_array.x+(sh*sa)*translate_array.y+(ch*sb+ca*cb*sh)*translate_array.z,\n\t(sa*sb)*translate_array.x+(ca)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(-cb*sh-ch*ca*sb)*translate_array.x+(ch*sa)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n*/\n\n/* Y1Z2Y3 - X rotates around Z, Y around Y, Z around Y\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-ch*sa)*translate_array.y+(cb*sh+ch*ca*sb)*translate_array.z,\n\t(cb*sa)*translate_array.x+(ca)*translate_array.y+(sa*sb)*translate_array.z, \n\t(-ch*sb-ca*cb*sh)*translate_array.x+(sh*sa)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n*/\n\n/* Z1Y2Z3 - X rotates around Y, Y around Z, Z around Z\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-cb*sh-ch*ca*sb)*translate_array.y+(ch*sa)*translate_array.z,\n\t(ch*sb+ca*cb*sh)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(sh*sa)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(sa*sb)*translate_array.y+(ca)*translate_array.z);\n*/\r\n\r\n/* Z1X2Z3 - X rotates around X, Y around Z, Z around Z  So Close!!!!\r\nrotate_array = vec(\r\n\t(ch*cb-ca*sh*sb)*translate_array.x+(-ch*sb-ca*cb*sh)*translate_array.y+(sh*sa)*translate_array.z,\n\t(cb*sh+ch*ca*sb)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(sa*sb)*translate_array.x+(cb*sa)*translate_array.y+(ca)*translate_array.z);\r\n*/\n\n\r\n\r\nrotate_array = rotate_array + translate_amount;\r\n\nout1 = rotate_array;\n",
+													"code" : "// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\n\n// rotate_value_calculated = vec(rotate_amount.x * TWOPI, rotate_amount.y * TWOPI, rotate_amount.z * TWOPI);\n\ntranslate_array = (in1 * scale_amount) + travel;\r\n// translate_array = in1 + travel;\n\nch = cos(heading);\nsh = sin(heading);\nca = cos(attitude);\nsa = sin(attitude);\ncb = cos(bank);\nsb = sin(bank);\n\n/*   Original Matrix Calculations Z1Y2X3\nrotate_array = vec(\n\tch*cb*translate_array.x+(sa*sh*cb-ca*sb)*translate_array.y+(ca*sh*cb+sa*sb)*translate_array.z,\n\tch*sb*translate_array.x+(sa*sh*sb+ca*cb)*translate_array.y+(ca*sh*sb-sa*cb)*translate_array.z, \n\t(sh*-1.)*translate_array.x+sa*ch*translate_array.y+ca*ch*translate_array.z);\r\n// */\r\n\n/*  Matrix Calcs found online\r\nrotate_1 = vec(ch * ca, sh*sb - ch*sa*cb, ch*sa*sb + sh*cb);\nrotate_2 = vec(sa, ca*cb, -ca*sb);\nrotate_3 = vec(-sh*ca, sh*sa*cb + ch*sb, -sh*sa*sb + ch*cb);\r\n// */\r\n\n/*\tY1Z2X3 - X rotates around Z, Y around Y, Z around X\r\nrotate_array = vec(\n\t(ch * ca)*translate_array.x+(sh*sb - ch*sa*cb)*translate_array.y+(ch*sa*sb + sh*cb)*translate_array.z,\n\t(sa)*translate_array.x+(ca*cb)*translate_array.y+(-ca*sb)*translate_array.z, \n\t(-sh*ca)*translate_array.x+(sh*sa*cb + ch*sb)*translate_array.y+(-sh*sa*sb + ch*cb)*translate_array.z);\r\n// */\r\n\r\n/* Y1X2Z3 - X rotates around X, Y around Z, Z around Y\r\nrotate_array = vec(\r\n\t(ch*cb+sh*sa*sb)*translate_array.x+(ch*sa*sb+cb*sh)*translate_array.y+(-ca*sb)*translate_array.z,\n\t(-ca*sh)*translate_array.x+(ch*ca)*translate_array.y+(sa)*translate_array.z, \n\t(cb*sh*sa+ch*sb)*translate_array.x+(sh*sb-ch*cb*sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n// */\r\n\r\n/* X1Z2Y3 - X rotates around Z, Y around X, Z around Y\r\nrotate_array = vec(\r\n\t(cb * ca)*translate_array.x+(-sa)*translate_array.y+(ca*sb)*translate_array.z,\n\t(sh*sb + ch*cb*sa)*translate_array.x+(ch*ca)*translate_array.y+(ch*sa*sb - cb*sh)*translate_array.z, \n\t(cb*sh*sa - ch*sb)*translate_array.x+(ca*sh)*translate_array.y+(ch*cb + sh*sa*sb)*translate_array.z);\r\n// */\r\n\r\n/* X1Y2Z3 - X rotates around Y, Y around X, Z around Z\nrotate_array = vec(\n\t(ca*cb)*translate_array.x+(-ca*sb)*translate_array.y+(sa)*translate_array.z,\n\t(ch*sb+cb*sh*sa)*translate_array.x+(ch*cb-sh*sa*sb)*translate_array.y+(-ca*sh)*translate_array.z, \n\t(sh*sb-ch*cb*sa)*translate_array.x+(cb*sh+ch*sa*sb)*translate_array.y+(ch*ca)*translate_array.z);\n// */\r\n\r\n/* Z1X2Y3 - swapped up Z/Y\r\nrotate_array = vec(\r\n\t(ch*cb-sh*sa*sb)*translate_array.x+(-ca*sh)*translate_array.y+(ch*sb+cb*sh*sa)*translate_array.z,\n\t(cb*sh+ch*sa*sb)*translate_array.x+(ch*ca)*translate_array.y+(sh*sb-ch*cb*sa)*translate_array.z, \n\t(-ca*sb)*translate_array.x+(sa)*translate_array.y+(ca*cb)*translate_array.z);\r\n// */\r\n\r\n/* Z1Y2X3 - X rotates around Y, Y around Z, Z around X\nrotate_array = vec(\n\t(ch*ca)*translate_array.x+(ch*sa*sb-cb*sh)*translate_array.y+(sh*sb+ch*cb*sa)*translate_array.z,\n\t(ca*sh)*translate_array.x+(ch*cb+sh*sa*sb)*translate_array.y+(cb*sh*sa-ch*sb)*translate_array.z, \n\t(-sa)*translate_array.x+(ca*sb)*translate_array.y+(ca*cb)*translate_array.z);\n// */\r\n\r\n//////\r\n\r\n/* X1Z2X3 - X rotates around Z, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(-cb*sa)*translate_array.y+(sa*sb)*translate_array.z,\n\t(ch*sa)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-cb*sh-ch*ca*sb)*translate_array.z, \n\t(sh*sa)*translate_array.x+(ch*sb+ca*cb*sh)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n// */\n\n/* X1Y2X3 - X rotates around Y, Y around X, Z around X\nrotate_array = vec(\n\t(ca)*translate_array.x+(sa*sb)*translate_array.y+(cb*sa)*translate_array.z,\n\t(sh*sa)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(-ch*sb-ca*cb*sh)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(cb*sh+ch*ca*sb)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n// */\n\n// Y1X2Y3 - X rotates around X, Y around Y, Z around Y So Close!!!!!!\nrotate_array = vec(\n\t(ch*cb-ca*sh*sb)*translate_array.x+(sh*sa)*translate_array.y+(ch*sb+ca*cb*sh)*translate_array.z,\n\t(sa*sb)*translate_array.x+(ca)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(-cb*sh-ch*ca*sb)*translate_array.x+(ch*sa)*translate_array.y+(ch*ca*cb-sh*sb)*translate_array.z);\n// */\n\n/* Y1Z2Y3 - X rotates around Z, Y around Y, Z around Y\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-ch*sa)*translate_array.y+(cb*sh+ch*ca*sb)*translate_array.z,\n\t(cb*sa)*translate_array.x+(ca)*translate_array.y+(sa*sb)*translate_array.z, \n\t(-ch*sb-ca*cb*sh)*translate_array.x+(sh*sa)*translate_array.y+(ch*cb-ca*sh*sb)*translate_array.z);\n// */\n\n/* Z1Y2Z3 - X rotates around Y, Y around Z, Z around Z\nrotate_array = vec(\n\t(ch*ca*cb-sh*sb)*translate_array.x+(-cb*sh-ch*ca*sb)*translate_array.y+(ch*sa)*translate_array.z,\n\t(ch*sb+ca*cb*sh)*translate_array.x+(ch*cb-ca*sh*sb)*translate_array.y+(sh*sa)*translate_array.z, \n\t(-ch*sa)*translate_array.x+(sa*sb)*translate_array.y+(ca)*translate_array.z);\n// */\r\n\r\n/* Z1X2Z3 - X rotates around X, Y around Z, Z around Z  So Close!!!!\r\nrotate_array = vec(\r\n\t(ch*cb-ca*sh*sb)*translate_array.x+(-ch*sb-ca*cb*sh)*translate_array.y+(sh*sa)*translate_array.z,\n\t(cb*sh+ch*ca*sb)*translate_array.x+(ch*ca*cb-sh*sb)*translate_array.y+(-ch*sa)*translate_array.z, \n\t(sa*sb)*translate_array.x+(cb*sa)*translate_array.y+(ca)*translate_array.z);\r\n// */\n\n\r\n\r\nrotate_array = rotate_array + translate_amount;\r\n\nout1 = rotate_array;\n",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -29185,168 +29184,168 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jit.gl.slab.gauss6x.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.gl.delay%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.gl.delay%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jpoly.gl.texture%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shape-pos-coll.txt",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/data",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.colorSwatch.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.record%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.record%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.class.matrix.route.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.passmatrixinfo%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.colorTexture.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.colorTexture.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.steeringRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.steeringRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.cameraRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.cameraRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.midiin.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.midiin.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.mapper.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.mapper.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.mappings.js",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/code",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.filewatcher.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.filesaver.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -29354,28 +29353,28 @@
 , 			{
 				"name" : "jmod.input%.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
-				"patcherrelativepath" : "../../../Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
+				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
-				"patcherrelativepath" : "../../../Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
+				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.thru.maxpat",
 				"bootpath" : "~/Documents/_Audio Projects/CriticalMass/|Media/criticalMass|Media/patchers",
-				"patcherrelativepath" : "../../../_Audio Projects/CriticalMass/|Media/criticalMass|Media/patchers",
+				"patcherrelativepath" : "../../../../_Audio Projects/CriticalMass/|Media/criticalMass|Media/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.ui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
-				"patcherrelativepath" : "../../../Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
+				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma-0.5.7/patchers/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
