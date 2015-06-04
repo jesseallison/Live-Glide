@@ -22342,7 +22342,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 311.0, 442.0, 150.0, 25.0 ],
 									"style" : "",
-									"text" : "31.079136 0. 0."
+									"text" : "23.309353 0. 0."
 								}
 
 							}
@@ -22544,7 +22544,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 287.0, 603.0, 90.0, 22.0 ],
+													"patching_rect" : [ 266.0, 625.0, 90.0, 22.0 ],
 													"style" : "",
 													"text" : "vexpr $f1 + $f2"
 												}
@@ -22671,7 +22671,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 400.0, 603.0, 20.0, 22.0 ],
+													"patching_rect" : [ 337.0, 581.0, 20.0, 22.0 ],
 													"style" : "",
 													"text" : "t l"
 												}
@@ -22684,7 +22684,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 263.5, 559.0, 111.0, 22.0 ],
+													"patching_rect" : [ 266.0, 545.0, 111.0, 22.0 ],
 													"style" : "",
 													"text" : "vexpr (-1 * $f1)*$f2"
 												}
@@ -23955,7 +23955,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 529.050049, 274.5, 119.599976, 58.0 ],
 									"style" : "",
-									"text" : "149.812393 -404.803223 12211.962891"
+									"text" : "37.513737 -705.617676 1257.10498"
 								}
 
 							}
@@ -24616,7 +24616,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 2380.0, 601.0, 1142.0, 813.0 ],
+										"rect" : [ 1845.0, 583.0, 1142.0, 813.0 ],
 										"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"bglocked" : 0,
@@ -24647,7 +24647,7 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
-													"code" : "// From Tim Place tap.rotate code.\r\ntranslate_array = (in1 * scale_amount) + travel;\r\n\r\n// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\t\r\n\r\ntemp_x = translate_array.x;\r\ntemp_y = translate_array.y;\r\ntemp_z = translate_array.z;\r\n\r\n// z-rotate\n//\t\t(x, y, &x2, &y2)\r\n// rotate_cartopol\r\nmagnitude = sqrt((temp_x * temp_x) + (temp_y * temp_y));\n\t\n\tif (temp_x == 0)\n\t\ttemp_x = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_x / temp_y);\t\n\tif ((temp_x < 0) && (temp_y < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_x < 0) && (temp_y >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += bank;\n//\t\trotate_poltocar(x2, y2, &x, &y);\r\n\r\n\ttemp_x = magnitude * cos(phase);\n\ttemp_y = magnitude * sin(phase);\r\n\n// y-rotate\n\t\t//rotate_cartopol(z, x, &z2, &x2);\r\n\tmagnitude = sqrt((temp_z * temp_z) + (temp_x * temp_x));\n\t\n\tif (temp_z == 0)\n\t\ttemp_z = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_z / temp_x);\t\n\tif ((temp_z < 0) && (temp_x < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_z < 0) && (temp_x >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += heading;\r\n\t// x2 += obj->rot_y_rad;\r\n\t\n\t\t//rotate_poltocar(z2, x2, &z, &x);\r\n\ttemp_z = magnitude * cos(phase);\n\ttemp_x = magnitude * sin(phase);\n\n// x-rotate\n\t// rotate_cartopol(y, z, &y2, &z2);\r\n\tmagnitude = sqrt((temp_y * temp_y) + (temp_z * temp_z));\n\t\n\tif (temp_y == 0)\n\t\ttemp_y = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_y / temp_z);\t\n\tif ((temp_y < 0) && (temp_z < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_y < 0) && (temp_z >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += attitude;\r\n\t// \t\tz2 += obj->rot_x_rad;\n\t\t//rotate_poltocar(y2, z2, &y, &z);\r\n\ttemp_y = magnitude * cos(phase);\n\ttemp_z = magnitude * sin(phase);\r\n\r\nrotated_array = vec(temp_x,temp_y,temp_z);\n\r\nrotated_translated_array = rotated_array + translate_amount;\r\n\r\nout1 = rotated_translated_array;",
+													"code" : "// From Tim Place tap.rotate code.\r\ntranslate_array = (in1 * scale_amount) + travel;\r\n\r\n// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\t\r\n\r\ntemp_x = translate_array.x;\r\ntemp_y = translate_array.y;\r\ntemp_z = translate_array.z;\r\n\r\n// z-rotate\r\n// rotate_cartopol(x, y, &x2, &y2)\r\n\tz_magnitude = sqrt((temp_x * temp_x) + (temp_y * temp_y));\n\t\n\tif (temp_x == 0)\n\t\ttemp_x = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_x / temp_y);\t\n\tif ((temp_x < 0) && (temp_y < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_x < 0) && (temp_y >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tz_phase = phase + bank;\n//\t\trotate_poltocar(x2, y2, &x, &y);\r\n\r\n\ttemp_x = z_magnitude * cos(z_phase);\n\ttemp_y = z_magnitude * sin(z_phase);\r\n\n// y-rotate\n\t\t//rotate_cartopol(z, x, &z2, &x2);\r\n\ty_magnitude = sqrt((temp_z * temp_z) + (temp_x * temp_x));\n\t\n\tif (temp_z == 0)\n\t\ttemp_z = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_z / temp_x);\t\n\tif ((temp_z < 0) && (temp_x < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_z < 0) && (temp_x >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\ty_phase = phase + heading;\r\n\t// x2 += obj->rot_y_rad;\r\n\t\n\t\t//rotate_poltocar(z2, x2, &z, &x);\r\n\ttemp_z = y_magnitude * cos(y_phase);\n\ttemp_x = y_magnitude * sin(y_phase);\n\n// x-rotate\n\t// rotate_cartopol(y, z, &y2, &z2);\r\n\tx_magnitude = sqrt((temp_y * temp_y) + (temp_z * temp_z));\n\t\n\tif (temp_y == 0)\n\t\ttemp_y = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_y / temp_z);\t\n\tif ((temp_y < 0) && (temp_z < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_y < 0) && (temp_z >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tx_phase = phase + attitude;\r\n\t// \t\tz2 += obj->rot_x_rad;\n\t\t//rotate_poltocar(y2, z2, &y, &z);\r\n\ttemp_y = x_magnitude * cos(x_phase);\n\ttemp_z = x_magnitude * sin(x_phase);\r\n\r\nrotated_array = vec(temp_x,temp_y,temp_z);\n\r\nrotated_translated_array = rotated_array + translate_amount;\r\n\r\nout1 = rotated_translated_array;",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -25027,7 +25027,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 2380.0, 601.0, 1142.0, 813.0 ],
+										"rect" : [ 1845.0, 583.0, 1142.0, 813.0 ],
 										"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"bglocked" : 0,
@@ -25058,7 +25058,7 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
-													"code" : "// From Tim Place tap.rotate code.\r\ntranslate_array = (in1 * scale_amount) + travel;\r\n\r\n// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\t\r\n\r\ntemp_x = translate_array.x;\r\ntemp_y = translate_array.y;\r\ntemp_z = translate_array.z;\r\n\r\n// z-rotate\n//\t\t(x, y, &x2, &y2)\r\n// rotate_cartopol\r\nmagnitude = sqrt((temp_x * temp_x) + (temp_y * temp_y));\n\t\n\tif (temp_x == 0)\n\t\ttemp_x = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_x / temp_y);\t\n\tif ((temp_x < 0) && (temp_y < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_x < 0) && (temp_y >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += bank;\n//\t\trotate_poltocar(x2, y2, &x, &y);\r\n\r\n\ttemp_x = magnitude * cos(phase);\n\ttemp_y = magnitude * sin(phase);\r\n\n// y-rotate\n\t\t//rotate_cartopol(z, x, &z2, &x2);\r\n\tmagnitude = sqrt((temp_z * temp_z) + (temp_x * temp_x));\n\t\n\tif (temp_z == 0)\n\t\ttemp_z = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_z / temp_x);\t\n\tif ((temp_z < 0) && (temp_x < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_z < 0) && (temp_x >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += heading;\r\n\t// x2 += obj->rot_y_rad;\r\n\t\n\t\t//rotate_poltocar(z2, x2, &z, &x);\r\n\ttemp_z = magnitude * cos(phase);\n\ttemp_x = magnitude * sin(phase);\n\n// x-rotate\n\t// rotate_cartopol(y, z, &y2, &z2);\r\n\tmagnitude = sqrt((temp_y * temp_y) + (temp_z * temp_z));\n\t\n\tif (temp_y == 0)\n\t\ttemp_y = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_y / temp_z);\t\n\tif ((temp_y < 0) && (temp_z < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_y < 0) && (temp_z >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += attitude;\r\n\t// \t\tz2 += obj->rot_x_rad;\n\t\t//rotate_poltocar(y2, z2, &y, &z);\r\n\ttemp_y = magnitude * cos(phase);\n\ttemp_z = magnitude * sin(phase);\r\n\r\nrotated_array = vec(temp_x,temp_y,temp_z);\n\r\nrotated_translated_array = rotated_array + translate_amount;\r\n\r\nout1 = rotated_translated_array;",
+													"code" : "// From Tim Place tap.rotate code.\r\ntranslate_array = (in1 * scale_amount) + travel;\r\n\r\n// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\t\r\n\r\ntemp_x = translate_array.x;\r\ntemp_y = translate_array.y;\r\ntemp_z = translate_array.z;\r\n\r\n// z-rotate\r\n// rotate_cartopol(x, y, &x2, &y2)\r\n\tz_magnitude = sqrt((temp_x * temp_x) + (temp_y * temp_y));\n\t\n\tif (temp_x == 0)\n\t\ttemp_x = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_x / temp_y);\t\n\tif ((temp_x < 0) && (temp_y < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_x < 0) && (temp_y >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tz_phase = phase + bank;\n//\t\trotate_poltocar(x2, y2, &x, &y);\r\n\r\n\ttemp_x = z_magnitude * cos(z_phase);\n\ttemp_y = z_magnitude * sin(z_phase);\r\n\n// y-rotate\n\t\t//rotate_cartopol(z, x, &z2, &x2);\r\n\ty_magnitude = sqrt((temp_z * temp_z) + (temp_x * temp_x));\n\t\n\tif (temp_z == 0)\n\t\ttemp_z = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_z / temp_x);\t\n\tif ((temp_z < 0) && (temp_x < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_z < 0) && (temp_x >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\ty_phase = phase + heading;\r\n\t// x2 += obj->rot_y_rad;\r\n\t\n\t\t//rotate_poltocar(z2, x2, &z, &x);\r\n\ttemp_z = y_magnitude * cos(y_phase);\n\ttemp_x = y_magnitude * sin(y_phase);\n\n// x-rotate\n\t// rotate_cartopol(y, z, &y2, &z2);\r\n\tx_magnitude = sqrt((temp_y * temp_y) + (temp_z * temp_z));\n\t\n\tif (temp_y == 0)\n\t\ttemp_y = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_y / temp_z);\t\n\tif ((temp_y < 0) && (temp_z < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_y < 0) && (temp_z >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tx_phase = phase + attitude;\r\n\t// \t\tz2 += obj->rot_x_rad;\n\t\t//rotate_poltocar(y2, z2, &y, &z);\r\n\ttemp_y = x_magnitude * cos(x_phase);\n\ttemp_z = x_magnitude * sin(x_phase);\r\n\r\nrotated_array = vec(temp_x,temp_y,temp_z);\n\r\nrotated_translated_array = rotated_array + translate_amount;\r\n\r\nout1 = rotated_translated_array;",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -25498,7 +25498,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 2380.0, 601.0, 1142.0, 813.0 ],
+										"rect" : [ 1845.0, 583.0, 1142.0, 813.0 ],
 										"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"bglocked" : 0,
@@ -25529,7 +25529,7 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
-													"code" : "// From Tim Place tap.rotate code.\r\ntranslate_array = (in1 * scale_amount) + travel;\r\n\r\n// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\t\r\n\r\ntemp_x = translate_array.x;\r\ntemp_y = translate_array.y;\r\ntemp_z = translate_array.z;\r\n\r\n// z-rotate\n//\t\t(x, y, &x2, &y2)\r\n// rotate_cartopol\r\nmagnitude = sqrt((temp_x * temp_x) + (temp_y * temp_y));\n\t\n\tif (temp_x == 0)\n\t\ttemp_x = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_x / temp_y);\t\n\tif ((temp_x < 0) && (temp_y < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_x < 0) && (temp_y >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += bank;\n//\t\trotate_poltocar(x2, y2, &x, &y);\r\n\r\n\ttemp_x = magnitude * cos(phase);\n\ttemp_y = magnitude * sin(phase);\r\n\n// y-rotate\n\t\t//rotate_cartopol(z, x, &z2, &x2);\r\n\tmagnitude = sqrt((temp_z * temp_z) + (temp_x * temp_x));\n\t\n\tif (temp_z == 0)\n\t\ttemp_z = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_z / temp_x);\t\n\tif ((temp_z < 0) && (temp_x < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_z < 0) && (temp_x >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += heading;\r\n\t// x2 += obj->rot_y_rad;\r\n\t\n\t\t//rotate_poltocar(z2, x2, &z, &x);\r\n\ttemp_z = magnitude * cos(phase);\n\ttemp_x = magnitude * sin(phase);\n\n// x-rotate\n\t// rotate_cartopol(y, z, &y2, &z2);\r\n\tmagnitude = sqrt((temp_y * temp_y) + (temp_z * temp_z));\n\t\n\tif (temp_y == 0)\n\t\ttemp_y = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_y / temp_z);\t\n\tif ((temp_y < 0) && (temp_z < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_y < 0) && (temp_z >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += attitude;\r\n\t// \t\tz2 += obj->rot_x_rad;\n\t\t//rotate_poltocar(y2, z2, &y, &z);\r\n\ttemp_y = magnitude * cos(phase);\n\ttemp_z = magnitude * sin(phase);\r\n\r\nrotated_array = vec(temp_x,temp_y,temp_z);\n\r\nrotated_translated_array = rotated_array + translate_amount;\r\n\r\nout1 = rotated_translated_array;",
+													"code" : "// From Tim Place tap.rotate code.\r\ntranslate_array = (in1 * scale_amount) + travel;\r\n\r\n// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\t\r\n\r\ntemp_x = translate_array.x;\r\ntemp_y = translate_array.y;\r\ntemp_z = translate_array.z;\r\n\r\n// z-rotate\r\n// rotate_cartopol(x, y, &x2, &y2)\r\n\tz_magnitude = sqrt((temp_x * temp_x) + (temp_y * temp_y));\n\t\n\tif (temp_x == 0)\n\t\ttemp_x = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_x / temp_y);\t\n\tif ((temp_x < 0) && (temp_y < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_x < 0) && (temp_y >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tz_phase = phase + bank;\n//\t\trotate_poltocar(x2, y2, &x, &y);\r\n\r\n\ttemp_x = z_magnitude * cos(z_phase);\n\ttemp_y = z_magnitude * sin(z_phase);\r\n\n// y-rotate\n\t\t//rotate_cartopol(z, x, &z2, &x2);\r\n\ty_magnitude = sqrt((temp_z * temp_z) + (temp_x * temp_x));\n\t\n\tif (temp_z == 0)\n\t\ttemp_z = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_z / temp_x);\t\n\tif ((temp_z < 0) && (temp_x < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_z < 0) && (temp_x >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\ty_phase = phase + heading;\r\n\t// x2 += obj->rot_y_rad;\r\n\t\n\t\t//rotate_poltocar(z2, x2, &z, &x);\r\n\ttemp_z = y_magnitude * cos(y_phase);\n\ttemp_x = y_magnitude * sin(y_phase);\n\n// x-rotate\n\t// rotate_cartopol(y, z, &y2, &z2);\r\n\tx_magnitude = sqrt((temp_y * temp_y) + (temp_z * temp_z));\n\t\n\tif (temp_y == 0)\n\t\ttemp_y = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(temp_y / temp_z);\t\n\tif ((temp_y < 0) && (temp_z < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((temp_y < 0) && (temp_z >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tx_phase = phase + attitude;\r\n\t// \t\tz2 += obj->rot_x_rad;\n\t\t//rotate_poltocar(y2, z2, &y, &z);\r\n\ttemp_y = x_magnitude * cos(x_phase);\n\ttemp_z = x_magnitude * sin(x_phase);\r\n\r\nrotated_array = vec(temp_x,temp_y,temp_z);\n\r\nrotated_translated_array = rotated_array + translate_amount;\r\n\r\nout1 = rotated_translated_array;",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
