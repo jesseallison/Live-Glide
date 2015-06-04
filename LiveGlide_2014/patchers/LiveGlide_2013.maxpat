@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 125.0, 79.0, 1044.0, 934.0 ],
+		"rect" : [ 584.0, 79.0, 1044.0, 934.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -76,7 +76,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -231,7 +231,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 323.65033, 238.700073, 100.0, 22.0 ],
 									"style" : "",
-									"text" : "0. $1 15.486726"
+									"text" : "0. $1 6."
 								}
 
 							}
@@ -486,7 +486,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1511,7 +1511,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1773,7 +1773,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1860,7 +1860,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2019,6 +2019,7 @@
 								"box" : 								{
 									"id" : "obj-11",
 									"maxclass" : "jit.pwindow",
+									"name" : "u816001250",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -2148,7 +2149,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2563,7 +2564,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3198,7 +3199,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3833,7 +3834,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4454,7 +4455,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4627,6 +4628,7 @@
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "jit.pwindow",
+									"name" : "u038001319",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -4843,7 +4845,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -5414,7 +5416,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -5971,7 +5973,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6562,6 +6564,7 @@
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "jit.pwindow",
+									"name" : "u036001349",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -6573,6 +6576,7 @@
 								"box" : 								{
 									"id" : "obj-116",
 									"maxclass" : "jit.pwindow",
+									"name" : "u827001352",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -6584,6 +6588,7 @@
 								"box" : 								{
 									"id" : "obj-112",
 									"maxclass" : "jit.pwindow",
+									"name" : "u877001355",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -6665,7 +6670,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -7364,7 +7369,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -7853,7 +7858,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -9289,7 +9294,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -10142,7 +10147,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -10316,7 +10321,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -10451,7 +10456,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -10679,7 +10684,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -11442,7 +11447,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -11730,7 +11735,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -12734,7 +12739,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -12920,7 +12925,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -13049,7 +13054,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -13842,7 +13847,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -13971,7 +13976,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -14764,7 +14769,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -14893,7 +14898,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -15686,7 +15691,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -16021,6 +16026,7 @@
 								"box" : 								{
 									"id" : "obj-31",
 									"maxclass" : "jit.pwindow",
+									"name" : "u792002590",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -16323,7 +16329,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -16567,7 +16573,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -16714,7 +16720,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -17095,7 +17101,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -18944,7 +18950,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -19134,6 +19140,7 @@
 				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "jit.pwindow",
+					"name" : "u688002648",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
@@ -19228,12 +19235,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 257.0, 115.0, 1283.0, 599.0 ],
+						"rect" : [ 444.0, 104.0, 1283.0, 599.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -19375,7 +19382,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -19767,7 +19774,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -19983,6 +19990,7 @@
 								"box" : 								{
 									"id" : "obj-49",
 									"maxclass" : "jit.pwindow",
+									"name" : "u916002767",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -20005,7 +20013,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -20165,7 +20173,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -20557,7 +20565,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -20773,6 +20781,7 @@
 								"box" : 								{
 									"id" : "obj-24",
 									"maxclass" : "jit.pwindow",
+									"name" : "u710002790",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -20795,7 +20804,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -20955,7 +20964,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -21372,7 +21381,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -21588,6 +21597,7 @@
 								"box" : 								{
 									"id" : "obj-26",
 									"maxclass" : "jit.pwindow",
+									"name" : "u623002814",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -21610,7 +21620,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -22083,7 +22093,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -22222,12 +22232,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 56.0, 254.0, 1420.0, 895.0 ],
+						"rect" : [ 419.0, 79.0, 1420.0, 895.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -22254,6 +22264,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-106",
@@ -22331,7 +22342,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 311.0, 442.0, 150.0, 25.0 ],
 									"style" : "",
-									"text" : "282.581818 0. 0."
+									"text" : "0. 0. 0."
 								}
 
 							}
@@ -22374,7 +22385,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -22717,7 +22728,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -22945,7 +22956,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -23784,7 +23795,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -23944,7 +23955,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 529.050049, 274.5, 119.599976, 58.0 ],
 									"style" : "",
-									"text" : "29.307394 -116.224815 2078.089111"
+									"text" : "20.770933 -44.941532 582.194092"
 								}
 
 							}
@@ -24047,7 +24058,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -24198,7 +24209,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -24388,7 +24399,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -24577,6 +24588,7 @@
 								"box" : 								{
 									"id" : "obj-42",
 									"maxclass" : "jit.pwindow",
+									"name" : "u111002887",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -24599,7 +24611,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -24782,7 +24794,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -24971,6 +24983,7 @@
 								"box" : 								{
 									"id" : "obj-64",
 									"maxclass" : "jit.pwindow",
+									"name" : "u943002903",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -24993,7 +25006,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -25206,7 +25219,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -25425,6 +25438,7 @@
 								"box" : 								{
 									"id" : "obj-69",
 									"maxclass" : "jit.pwindow",
+									"name" : "u283002919",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -25447,12 +25461,12 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 294.0, 435.0, 932.0, 687.0 ],
+										"rect" : [ 271.0, 79.0, 1142.0, 813.0 ],
 										"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
 										"bglocked" : 0,
@@ -25482,6 +25496,22 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
+												"box" : 												{
+													"code" : "// From Tim Place tap.rotate code.\r\ntranslate_array = (in1 * scale_amount) + travel;\r\n\r\n// Set up the rotations in radians\nattitude = (rotate_amount.x / 360.) * TWOPI;\nheading = (rotate_amount.y / 360.) * TWOPI;\nbank = (rotate_amount.z / 360.) * TWOPI;\t\r\n\r\n// z-rotate\n//\t\t(x, y, &x2, &y2)\r\n// rotate_cartopol\r\nmagnitude = sqrt((translate_array.x * translate_array.x) + (translate_array.y * translate_array.y));\n\t\n\tif (real == 0)\n\t\treal = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(translate_array.x / translate_array.y);\t\n\tif ((translate_array.x < 0) && (translate_array.y < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((translate_array.x < 0) && (translate_array.y >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += bank;\n//\t\trotate_poltocar(x2, y2, &x, &y);\r\n\r\n\ttranslate_array.x = magnitude * cos(phase);\n\ttranslate_array.y = magnitude * sin(phase);\r\n\n// y-rotate\n\t\t//rotate_cartopol(z, x, &z2, &x2);\r\n\tmagnitude = sqrt((translate_array.z * translate_array.z) + (translate_array.x * translate_array.x));\n\t\n\tif (real == 0)\n\t\treal = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(translate_array.z / translate_array.x);\t\n\tif ((translate_array.z < 0) && (translate_array.x < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((translate_array.z < 0) && (translate_array.x >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += heading;\r\n\t// x2 += obj->rot_y_rad;\r\n\t\n\t\t//rotate_poltocar(z2, x2, &z, &x);\r\n\ttranslate_array.z = magnitude * cos(phase);\n\ttranslate_array.x = magnitude * sin(phase);\n\n// x-rotate\n\t// rotate_cartopol(y, z, &y2, &z2);\r\n\tmagnitude = sqrt((translate_array.y * translate_array.y) + (translate_array.z * translate_array.z));\n\t\n\tif (real == 0)\n\t\treal = 0.000001;\t\t\t\t// prevent divide by zero\n\tphase = atan(translate_array.y / translate_array.z);\t\n\tif ((translate_array.y < 0) && (translate_array.z < 0))\t\t// arctangent corrections\n\t\tphase = phase - 3.1415926535897932;\n\telse if ((translate_array.y < 0) && (translate_array.z >= 0))\n\t\tphase = phase + 3.1415926535897932;\r\n\n\tphase += attitude;\r\n\t// \t\tz2 += obj->rot_x_rad;\n\t\t//rotate_poltocar(y2, z2, &y, &z);\r\n\ttranslate_array.y = magnitude * cos(phase);\n\ttranslate_array.z = magnitude * sin(phase);\n\r\nrotate_array = translate_array + translate_amount;\r\n\r\nout1 = rotate_array;",
+													"fontface" : 0,
+													"fontname" : "Arial",
+													"fontsize" : 12.0,
+													"id" : "obj-8",
+													"maxclass" : "codebox",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 23.0, 103.0, 757.0, 443.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"fontface" : 0,
 													"fontname" : "Arial",
@@ -25554,7 +25584,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 43.0, 108.0, 766.0, 447.0 ],
+													"patching_rect" : [ 782.0, 99.0, 766.0, 447.0 ],
 													"style" : ""
 												}
 
@@ -25688,7 +25718,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -25847,6 +25877,7 @@
 								"box" : 								{
 									"id" : "obj-60",
 									"maxclass" : "jit.pwindow",
+									"name" : "u861002936",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -25974,7 +26005,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -26149,6 +26180,7 @@
 								"box" : 								{
 									"id" : "obj-10",
 									"maxclass" : "jit.pwindow",
+									"name" : "u029002943",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -26186,7 +26218,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -26361,6 +26393,7 @@
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "jit.pwindow",
+									"name" : "u272002950",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -26398,7 +26431,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -26573,6 +26606,7 @@
 								"box" : 								{
 									"id" : "obj-45",
 									"maxclass" : "jit.pwindow",
+									"name" : "u876002957",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
@@ -27247,7 +27281,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -27728,6 +27762,7 @@
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "jit.pwindow",
+					"name" : "u129003017",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
@@ -29255,168 +29290,168 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jit.gl.slab.gauss6x.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.gl.delay%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.gl.delay%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jpoly.gl.texture%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shape-pos-coll.txt",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/data",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.colorSwatch.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.record%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.record%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.class.matrix.route.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.passmatrixinfo%.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.colorTexture.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.colorTexture.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.steeringRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.steeringRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.cameraRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.cameraRotation.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.midiin.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.midiin.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.mapper.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.mapper.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.mappings.js",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/code",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.filewatcher.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.filesaver.maxpat",
-				"bootpath" : "~/Documents/_Art_Projects/Live-Glide/LiveGlide_2014/patchers",
+				"bootpath" : "~/Documents/_Art_Projects/Live-Glide-2014/LiveGlide_2014/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
