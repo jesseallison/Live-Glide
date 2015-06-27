@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "performance_parameters">
+	<slot number = "1">
+		<patcher name = "Pan-A">
+			<pattr name = "parameter" value = "0.464567" />
+		</patcher>
+		<patcher name = "Pan-B">
+			<pattr name = "parameter" value = "0.527" />
+		</patcher>
+		<patcher name = "sliderA">
+			<pattr name = "parameter" value = "0.503226" />
+		</patcher>
+		<patcher name = "sliderB">
+			<pattr name = "parameter" value = "0.637795" />
+		</patcher>
+		<patcher name = "control_mapping_interface">
+			<pattr name = "control_mapping" value = "15000" />
+		</patcher>
+		<patcher name = "togA">
+			<pattr name = "parameter" value = "0." />
+		</patcher>
+		<patcher name = "togB">
+			<pattr name = "parameter" value = "1." />
+		</patcher>
+		<patcher name = "bango">
+			<pattr name = "parameter" value = "0." />
+		</patcher>
+	</slot>
+</pattrstorage>
+

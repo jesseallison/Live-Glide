@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "quicktime_jpegs">
+	<slot number = "1">
+		<pattr name = "movies" value = "read ./glideimages/giger.jpg" />
+	</slot>
+	<slot number = "2">
+		<pattr name = "movies" value = "read ./glideimages/BOROBUD.JPG" />
+	</slot>
+	<slot number = "3">
+		<pattr name = "movies" value = "read ./glideimages/gabriel.jpg" />
+	</slot>
+	<slot number = "4">
+		<pattr name = "movies" value = "read ./glideimages/rainbowserpent.jpg" />
+	</slot>
+	<slot number = "5">
+		<pattr name = "movies" value = "read ./glidemovies/anenome1.mov" />
+	</slot>
+	<slot number = "6">
+		<pattr name = "movies" value = "read ./glideimages/tantra.jpg" />
+	</slot>
+	<slot number = "7">
+		<pattr name = "movies" value = "read ./glideimages/giger.jpg" />
+	</slot>
+	<slot number = "8">
+		<pattr name = "movies" value = "read ./glideimages/village.jpg" />
+	</slot>
+	<slot number = "9">
+		<pattr name = "movies" value = "read ./glideimages/redwing1.jpg" />
+	</slot>
+	<slot number = "10">
+		<pattr name = "movies" value = "read ./glideimages/elves.jpg" />
+	</slot>
+	<slot number = "11">
+		<pattr name = "movies" value = "read ./glidemovies/bluepearls.mov" />
+	</slot>
+	<slot number = "12">
+		<pattr name = "movies" value = "read ./glidemovies/bluepearls.mov" />
+	</slot>
+	<slot number = "13">
+		<pattr name = "movies" value = "read ./glideimages/shriyantra.jpg" />
+	</slot>
+	<slot number = "14">
+		<pattr name = "movies" value = "read ./glideimages/SMANDALA.JPG" />
+	</slot>
+	<slot number = "15">
+		<pattr name = "movies" value = "read ./glideimages/giger-octopus.jpg" />
+	</slot>
+	<slot number = "16">
+		<pattr name = "movies" value = "read ./glidemovies/anenome1.mov" />
+	</slot>
+	<slot number = "17">
+		<pattr name = "movies" value = "read ./glidemovies/anenome1.mov" />
+	</slot>
+	<slot number = "18">
+		<pattr name = "movies" value = "read ./glidemovies/anenome1.mov" />
+	</slot>
+	<slot number = "19">
+		<pattr name = "movies" value = "read ./glideimages/rainbowserpent.jpg" />
+	</slot>
+	<slot number = "20">
+		<pattr name = "movies" value = "read ./glideimages/clownclose.jpg" />
+	</slot>
+	<slot number = "21">
+		<pattr name = "movies" value = "read ./glideimages/zoe007.jpg" />
+	</slot>
+	<slot number = "22">
+		<pattr name = "movies" value = "read ./glideimages/Hayagri1.jpg" />
+	</slot>
+	<slot number = "23">
+		<pattr name = "movies" value = "read ./glideimages/VAcostume-vivid.jpg" />
+	</slot>
+	<slot number = "24">
+		<pattr name = "movies" value = "read ./glideimages/VAcostume-vivid.jpg" />
+	</slot>
+	<slot number = "25">
+		<pattr name = "movies" value = "read ./glideimages/VAcostume-vivid.jpg" />
+	</slot>
+	<slot number = "26">
+		<pattr name = "movies" value = "read ./glideimages/VAcostume-vivid.jpg" />
+	</slot>
+	<slot number = "27">
+		<pattr name = "movies" value = "read ./glideimages/giger-octopus.jpg" />
+	</slot>
+	<slot number = "28">
+		<pattr name = "movies" value = "read ./glideimages/giger-octopus.jpg" />
+	</slot>
+	<slot number = "29">
+		<pattr name = "movies" value = "read ./glideimages/giger-octopus.jpg" />
+	</slot>
+	<slot number = "30">
+		<pattr name = "movies" value = "read ./glideimages/giger-octopus.jpg" />
+	</slot>
+	<slot number = "31">
+		<pattr name = "movies" value = "read ./glideimages/giger-octopus.jpg" />
+	</slot>
+	<slot number = "32">
+		<pattr name = "movies" value = "read ./glideimages/COHEN2.JPG" />
+	</slot>
+	<slot number = "33">
+		<pattr name = "movies" value = "read ./glideimages/COHEN2.JPG" />
+	</slot>
+	<slot number = "34">
+		<pattr name = "movies" value = "read ./glideimages/COHEN2.JPG" />
+	</slot>
+	<slot number = "35">
+		<pattr name = "movies" value = "read ./glidemovies/CS6corals.mov" />
+	</slot>
+	<slot number = "37">
+		<pattr name = "movies" value = "read ./glideimages/Yasuo_Miichi_001_Kojishi_F.jpg" />
+	</slot>
+	<slot number = "38">
+		<pattr name = "movies" value = "read ./glideimages/Yasuo_Miichi_001_Kojishi_F.jpg" />
+	</slot>
+	<slot number = "40">
+		<pattr name = "movies" value = "read ./glidemovies/CSmoremany.mov" />
+	</slot>
+	<slot number = "41">
+		<pattr name = "movies" value = "read ./glideimages/Hayagri1.jpg" />
+	</slot>
+	<slot number = "42">
+		<pattr name = "movies" value = "read ./glideimages/Hayagri1.jpg" />
+	</slot>
+	<slot number = "43">
+		<pattr name = "movies" value = "read ./glideimages/Hayagri1.jpg" />
+	</slot>
+	<slot number = "44">
+		<pattr name = "movies" value = "read ./glidemovies/CS6corals.mov" />
+	</slot>
+	<slot number = "45">
+		<pattr name = "movies" value = "read ./glideimages/rainbowbody.jpg" />
+	</slot>
+	<slot number = "46">
+		<pattr name = "movies" value = "read ./glidemovies/CS6corals.mov" />
+	</slot>
+	<slot number = "47">
+		<pattr name = "movies" value = "read ./glidemovies/CSbrilliantcorals.mov" />
+	</slot>
+	<slot number = "48">
+		<pattr name = "movies" value = "read ./glidemovies/CSbrilliantcorals.mov" />
+	</slot>
+	<slot number = "49">
+		<pattr name = "movies" value = "read ./glidemovies/CSbrilliantcorals.mov" />
+	</slot>
+	<slot number = "50">
+		<pattr name = "movies" value = "read ./glideimages/SMANDALA.JPG" />
+	</slot>
+	<slot number = "51">
+		<pattr name = "movies" value = "read ./glidemovies/CSbrilliantcorals.mov" />
+	</slot>
+	<slot number = "52">
+		<pattr name = "movies" value = "read ./glidemovies/CSbrilliantcorals.mov" />
+	</slot>
+	<slot number = "53">
+		<pattr name = "movies" value = "read ./glidemovies/CScolorCoral1.mov" />
+	</slot>
+	<slot number = "54">
+		<pattr name = "movies" value = "read ./glidemovies/CSbrilliantcorals.mov" />
+	</slot>
+	<slot number = "55">
+		<pattr name = "movies" value = "read ./glideimages/Peacock-kimono.jpg" />
+	</slot>
+	<slot number = "56">
+		<pattr name = "movies" value = "read ./glideimages/lourdes.jpg" />
+	</slot>
+	<slot number = "57">
+		<pattr name = "movies" value = "read ./glideimages/rainbowserpent.jpg" />
+	</slot>
+	<slot number = "58">
+		<pattr name = "movies" value = "read ./glideimages/GR8LY8ED.JPG" />
+	</slot>
+	<slot number = "59">
+		<pattr name = "movies" value = "read ./glideimages/SMANDALA.JPG" />
+	</slot>
+	<slot number = "60">
+		<pattr name = "movies" value = "read ./glideimages/maze-chase-bw.jpg" />
+	</slot>
+	<slot number = "61">
+		<pattr name = "movies" value = "read ./glideimages/SMANDALA.JPG" />
+	</slot>
+	<slot number = "62">
+		<pattr name = "movies" value = "read ./glideimages/kikaju-myoo-rt-head-detail.jpg" />
+	</slot>
+	<slot number = "63">
+		<pattr name = "movies" value = "read ./glideimages/femaleanatomy.jpg" />
+	</slot>
+	<slot number = "64">
+		<pattr name = "movies" value = "read ./glideimages/BLUELILY.JPG" />
+	</slot>
+	<slot number = "65">
+		<pattr name = "movies" value = "read ./glideimages/kikaju-myoo-rt-head-detail.jpg" />
+	</slot>
+	<slot number = "66">
+		<pattr name = "movies" value = "read ./glideimages/kikaju-myoo-rt-head-detail.jpg" />
+	</slot>
+	<slot number = "67">
+		<pattr name = "movies" value = "read ./glideimages/kikaju-myoo-rt-head-detail.jpg" />
+	</slot>
+	<slot number = "68">
+		<pattr name = "movies" value = "read ./glideimages/kikaju-myoo-rt-head-detail.jpg" />
+	</slot>
+	<slot number = "71">
+		<pattr name = "movies" value = "read ./glidemovies/ocean2.mov" />
+	</slot>
+	<slot number = "74">
+		<pattr name = "movies" value = "read ./glideimages/FACEFR.JPG" />
+	</slot>
+	<slot number = "75">
+		<pattr name = "movies" value = "read ./glideimages/mycelium1.jpg" />
+	</slot>
+	<slot number = "76">
+		<pattr name = "movies" value = "read ./glideimages/FACEFR.JPG" />
+	</slot>
+	<slot number = "77">
+		<pattr name = "movies" value = "read ./glideimages/LAM.JPG" />
+	</slot>
+	<slot number = "79">
+		<pattr name = "movies" value = "read ./glideimages/MYCELIUM.JPG" />
+	</slot>
+	<slot number = "80">
+		<pattr name = "movies" value = "read ./glideimages/yggdrasil2.jpg" />
+	</slot>
+	<slot number = "81">
+		<pattr name = "movies" value = "read ./glideimages/yggdrasil2.jpg" />
+	</slot>
+	<slot number = "84">
+		<pattr name = "movies" value = "read ./glidemovies/ocean2.mov" />
+	</slot>
+	<slot number = "88">
+		<pattr name = "movies" value = "read ./glideimages/rainbowserpent.jpg" />
+	</slot>
+	<slot number = "89">
+		<pattr name = "movies" value = "read ./glideimages/baba_lotus_muktananda.jpg" />
+	</slot>
+	<slot number = "90">
+		<pattr name = "movies" value = "read ./glidemovies/anenome1.mov" />
+	</slot>
+	<slot number = "91">
+		<pattr name = "movies" value = "read ./glidemovies/anenome1.mov" />
+	</slot>
+	<slot number = "92">
+		<pattr name = "movies" value = "read ./glidemovies/ocean1.mov" />
+	</slot>
+	<slot number = "93">
+		<pattr name = "movies" value = "read ./glidemovies/ocean1.mov" />
+	</slot>
+	<slot number = "94">
+		<pattr name = "movies" value = "read ./glidemovies/longone.mov" />
+	</slot>
+	<slot number = "96">
+		<pattr name = "movies" value = "read ./glidemovies/streamone.mov" />
+	</slot>
+	<slot number = "97">
+		<pattr name = "movies" value = "read ./glidemovies/ocean2.mov" />
+	</slot>
+	<slot number = "98">
+		<pattr name = "movies" value = "read ./glidemovies/watertwo.mov" />
+	</slot>
+	<slot number = "99">
+		<pattr name = "movies" value = "read ./glidemovies/longone.mov" />
+	</slot>
+	<slot number = "100">
+		<pattr name = "movies" value = "read ./glideimages/scmandala.jpg" />
+	</slot>
+	<slot number = "101">
+		<pattr name = "movies" value = "read ./glideimages/clowns.jpg" />
+	</slot>
+	<slot number = "102">
+		<pattr name = "movies" value = "read ./glideimages/tantra.jpg" />
+	</slot>
+	<slot number = "103">
+		<pattr name = "movies" value = "read ./glideimages/village.jpg" />
+	</slot>
+	<slot number = "104">
+		<pattr name = "movies" value = "read ./glideimages/blueredfeathers.jpg" />
+	</slot>
+	<slot number = "105">
+		<pattr name = "movies" value = "read ./glidemovies/brownonbluejelly.mov" />
+	</slot>
+	<slot number = "106">
+		<pattr name = "movies" value = "read ./glidemovies/brownonbluejelly.mov" />
+	</slot>
+	<slot number = "107">
+		<pattr name = "movies" value = "read ./glideimages/elves.jpg" />
+	</slot>
+	<slot number = "110">
+		<pattr name = "movies" value = "read ./glideimages/ENTOMBED.JPG" />
+	</slot>
+	<slot number = "111">
+		<pattr name = "movies" value = "read ./glideimages/baba_nityanada.jpg" />
+	</slot>
+	<slot number = "112">
+		<pattr name = "movies" value = "read ./glideimages/KAIM-02.JPG" />
+	</slot>
+	<slot number = "113">
+		<pattr name = "movies" value = "read ./glideimages/KALI.JPG" />
+	</slot>
+	<slot number = "114">
+		<pattr name = "movies" value = "read ./glideimages/rainbowserpent.jpg" />
+	</slot>
+	<slot number = "116">
+		<pattr name = "movies" value = "read ./glideimages/GR8LY8ED.JPG" />
+	</slot>
+	<slot number = "117">
+		<pattr name = "movies" value = "read ./glideimages/lotus_in_mind.jpg" />
+	</slot>
+	<slot number = "118">
+		<pattr name = "movies" value = "read ./glideimages/nicolescu.jpg" />
+	</slot>
+	<slot number = "119">
+		<pattr name = "movies" value = "read ./glidemovies/anenome1.mov" />
+	</slot>
+	<slot number = "120">
+		<pattr name = "movies" value = "read ./glideimages/Hayagri1.jpg" />
+	</slot>
+	<slot number = "121">
+		<pattr name = "movies" value = "read ./glidemovies/seahorse4.mov" />
+	</slot>
+	<slot number = "122">
+		<pattr name = "movies" value = "read ./glidemovies/waterfall1.mov" />
+	</slot>
+	<slot number = "123">
+		<pattr name = "movies" value = "read ./glidemovies/waterfall1.mov" />
+	</slot>
+	<slot number = "124">
+		<pattr name = "movies" value = "read ./glidemovies/waterfall1.mov" />
+	</slot>
+	<slot number = "130">
+		<pattr name = "movies" value = "read ./glidemovies/senegal1.mov" />
+	</slot>
+	<slot number = "131">
+		<pattr name = "movies" value = "read ./glidemovies/2jelliesCU.mov" />
+	</slot>
+	<slot number = "132">
+		<pattr name = "movies" value = "read ./glidemovies/redoctopus.mov" />
+	</slot>
+	<slot number = "133">
+		<pattr name = "movies" value = "read ./glidemovies/redoctopus.mov" />
+	</slot>
+	<slot number = "134">
+		<pattr name = "movies" value = "read ./glidemovies/2jelliesCU.mov" />
+	</slot>
+	<slot number = "135">
+		<pattr name = "movies" value = "read ./glidemovies/2jelliesCU.mov" />
+	</slot>
+	<slot number = "136">
+		<pattr name = "movies" value = "read ./glideimages/lily-bottom.jpg" />
+	</slot>
+	<slot number = "137">
+		<pattr name = "movies" value = "read ./glideimages/MCKENNA.JPG" />
+	</slot>
+	<slot number = "138">
+		<pattr name = "movies" value = "read ./glidemovies/2jelliesCU.mov" />
+	</slot>
+	<slot number = "139">
+		<pattr name = "movies" value = "read ./glideimages/MCKENNA.JPG" />
+	</slot>
+	<slot number = "140">
+		<pattr name = "movies" value = "read ./glideimages/lily-bottom.jpg" />
+	</slot>
+	<slot number = "141">
+		<pattr name = "movies" value = "read ./glideimages/VAsilvertrayred.jpg" />
+	</slot>
+	<slot number = "142">
+		<pattr name = "movies" value = "read ./glideimages/VAsilvertrayred.jpg" />
+	</slot>
+	<slot number = "143">
+		<pattr name = "movies" value = "read ./glidemovies/mackerel" />
+	</slot>
+	<slot number = "144">
+		<pattr name = "movies" value = "read ./glidemovies/mackerel" />
+	</slot>
+	<slot number = "145">
+		<pattr name = "movies" value = "read ./glideimages/VAcostume-vivid.jpg" />
+	</slot>
+	<slot number = "150">
+		<pattr name = "movies" value = "read ./glideimages/VAcoloredsilk.jpg" />
+	</slot>
+	<slot number = "151">
+		<pattr name = "movies" value = "read ./glidemovies/mackerel" />
+	</slot>
+	<slot number = "152">
+		<pattr name = "movies" value = "read ./glideimages/VAcoloredsilk.jpg" />
+	</slot>
+	<slot number = "10945">
+		<pattr name = "movies" value = "read ./glideimages/GR8LY8ED.JPG" />
+	</slot>
+	<slot number = "14999">
+		<pattr name = "movies" value = "read ./glidemovies/longone.mov" />
+	</slot>
+</pattrstorage>
+

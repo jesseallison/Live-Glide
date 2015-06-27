@@ -1,0 +1,2225 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+
+<pattrstorage name = "control_mapping">
+	<slot number = "1">
+		<patcher name = "MasterFadeInOut">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FadeToColorButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringX">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringY">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZ">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringTravel">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringResatAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "control.map_param.select">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringYAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringYmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringYmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringTravelmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringTravelmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringScale">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringScalemin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringScalemax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "colorOffset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formHue">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formShade">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formSat">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formAlpha">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "brightness">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "contrast">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "saturation">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "hue">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FormJpegMenu">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FormJpegSelectButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "importColorTif">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "importAlphaTif">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "AutoWhiteColorAlpha">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "NormalSorted">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ColorAdjustResetAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "brightnessReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "contrastReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "saturationReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "hueReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "offsetRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "offsetAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraX">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraY">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZ">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraResatAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "control.map_param.select[1]">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraYAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoomReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelayReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraYmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraYmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoom">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoommin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoommax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelay">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelaymin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelaymax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightX">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightY">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZ">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZoom">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightXRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightResatAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightXAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightYRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightYAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZoomReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FogClear">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FogCutoff">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseHue">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseShade">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseSat">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseAlpha">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseAlphamin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseAlphamax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "MasterTextureSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "LiveCameraSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "MovieRate">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "QTJpegBankSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "QTMenuList">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "QTSelectButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "JpegMenuList">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "JpegSelectButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ClockDriver">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FormLength">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "StepNum">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ColorTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "AudioTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "MouseTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "CircleTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FogTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "CamRelAbsTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "DepthTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "SmoothTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "WireframeTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "RenderPrims">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "BlendSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetRecallNum">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetStoreNum">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetRecallButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetStoreButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetSlotNumBox">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetSlotNumStore">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNumBoxA">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNumBoxB">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNowA">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNowB">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+	</slot>
+	<slot number = "2">
+		<patcher name = "MasterFadeInOut">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FadeToColorButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringX">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringY">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZ">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringTravel">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringResatAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "control.map_param.select">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringYAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringYmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringXmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringYmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringZmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringTravelmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringTravelmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringScale">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringScalemin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "steeringScalemax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "colorOffset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formHue">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formShade">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formSat">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "formAlpha">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "brightness">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "contrast">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "saturation">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "hue">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FormJpegMenu">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FormJpegSelectButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "importColorTif">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "importAlphaTif">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "AutoWhiteColorAlpha">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "NormalSorted">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ColorAdjustResetAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "brightnessReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "contrastReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "saturationReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "hueReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "offsetRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "offsetAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraX">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraY">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZ">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraResatAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "control.map_param.select[1]">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraYAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoomReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelayReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraYmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZmin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraXmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraYmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZmax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoom">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoommin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraZoommax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelay">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelaymin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "cameraDelaymax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightX">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightY">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZ">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZoom">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightXRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightResatAll">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightXAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightYRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightYAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZRelativeReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZAbsoluteReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "lightZoomReset">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FogClear">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FogCutoff">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseHue">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseShade">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseSat">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseAlpha">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseAlphamin">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "eraseAlphamax">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "MasterTextureSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "LiveCameraSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "MovieRate">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "QTJpegBankSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "QTMenuList">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "QTSelectButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "JpegMenuList">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "JpegSelectButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ClockDriver">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FormLength">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "StepNum">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ColorTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "AudioTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "MouseTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "CircleTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "FogTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "CamRelAbsTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "DepthTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "SmoothTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "WireframeTog">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "RenderPrims">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "BlendSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetRecallNum">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetStoreNum">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetRecallButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "ConMapPresetStoreButton">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetSlotNumBox">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetSlotNumStore">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNumBoxA">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNumBoxB">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetSlider">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNowA">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+		<patcher name = "PerPresetNowB">
+			<pattr name = "midi-type" value = "" />
+			<pattr name = "net-assign" value = "" />
+			<pattr name = "midi-assign" value = "" />
+			<pattr name = "midi-net-scale" value = "" />
+		</patcher>
+	</slot>
+	<slot number = "15000">
+		<patcher name = "MasterFadeInOut">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "FadeToColorButton">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringX">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringY">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringZ">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringTravel">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringXRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringResatAll">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringXAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "control.map_param.select">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringYAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringZRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringZAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringXmin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringYmin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringZmin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringXmax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringYmax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringZmax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringTravelmin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringTravelmax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringScale">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringScalemin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "steeringScalemax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "colorOffset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "formHue">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "formShade">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "formSat">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "formAlpha">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "brightness">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "contrast">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "saturation">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "hue">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "FormJpegMenu">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "FormJpegSelectButton">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "importColorTif">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "importAlphaTif">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "AutoWhiteColorAlpha">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "NormalSorted">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "ColorAdjustResetAll">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "brightnessReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "contrastReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "saturationReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "hueReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "offsetRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "offsetAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraX">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraY">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZ">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraXRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraResatAll">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraXAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "control.map_param.select[1]">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraYAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZoomReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraDelayReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraXmin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraYmin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZmin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraXmax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraYmax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZmax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZoom">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZoommin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraZoommax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraDelay">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraDelaymin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "cameraDelaymax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightX">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightY">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightZ">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightZoom">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightXRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightResatAll">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightXAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightYRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightYAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightZRelativeReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightZAbsoluteReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "lightZoomReset">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "FogClear">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "FogCutoff">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "eraseHue">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "eraseShade">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "eraseSat">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "eraseAlpha">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "eraseAlphamin">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "eraseAlphamax">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "MasterTextureSlider">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "LiveCameraSlider">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "MovieRate">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "QTJpegBankSlider">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "QTMenuList">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "QTSelectButton">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "JpegMenuList">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "JpegSelectButton">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "ClockDriver">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "FormLength">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "StepNum">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "ColorTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "AudioTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "MouseTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "CircleTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "FogTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "CamRelAbsTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "DepthTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "SmoothTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "WireframeTog">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "RenderPrims">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "BlendSlider">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "ConMapPresetRecallNum">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "ConMapPresetStoreNum">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "ConMapPresetRecallButton">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "ConMapPresetStoreButton">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "PerPresetSlotNumBox">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "PerPresetSlotNumStore">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "PerPresetNumBoxA">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "PerPresetNumBoxB">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "PerPresetSlider">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "PerPresetNowA">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+		<patcher name = "PerPresetNowB">
+			<pattr name = "midi-type" value = "range" />
+			<pattr name = "net-assign" value = "---" />
+			<pattr name = "midi-assign" value = "Listen" />
+			<pattr name = "midi-net-scale" value = "0." />
+		</patcher>
+	</slot>
+</pattrstorage>
+

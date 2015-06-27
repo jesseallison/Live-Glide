@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 LiveGlide Status Report\
+finished June 27, 2015\
+\
+Overview:\
+\
+The Live-Glide GitHub archive contains three folders. One, called LiveGlideRebuilt-OR18-A, is the legacy version of the LiveGlide code, referred to hereafter as \'93Ray\'92s version.\'94 The other two folders contain different Max Project Files with associated Documents, called LiveGlide_2013 and LiveGlide_2014, made by Jesse Allison with help from Stephan Moore.  The LiveGlide_2014 folder contains the most recent version of the code.  The other version is included in case there are viable bits of code there that can be borrowed.  Once the project is closer to complete, the older versions can probably be dumped.\
+\
+NOTE: The main project file in LiveGlide_2014 has the name LiveGlide_2013.maxproj \'97 this is not an error.\
+\
+Status of individual features in the most recent version:\
+\
+\ul Fully implemented features\ulnone \
+
+\b Glide form
+\b0  \'97 the glide form itself is well-spaced and works properly.  The 27 possible combinations can be accessed using the same key commands used in Ray\'92s version.  A new (unrequested) feature has been introduced allowing the glide glyph to have surface irregularities, which improve its textural appearance.\
+
+\b Glyph steering
+\b0  \'97 now (finally) is implemented correctly, and works as it did in Ray\'92s version\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Zoom
+\b0  \'97 this control works as it did in Ray\'92s version.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Background \'93Erase\'94 color controls
+\b0  \'97 work as they did in Ray\'92s version\
+
+\b Form color controls
+\b0  \'97 work more or less as they did in Ray\'92s version, although the ability to rotate the colors has not yet been added.\
+
+\b Recording
+\b0  \'97 LiveGlide\'92s video screen can now be recorded directly to the hard drive! \
+\
+\ul Features yet to be implemented\ulnone \
+
+\b Clock Driver 
+\b0 \'97 the ability to control the speed of the master frame-rendering clock has not yet been added, though doing so is trivial.
+\b \
+Form Length
+\b0  \'97 a control for the number of segments in the form has not yet been implemented.
+\b \
+# Steps 
+\b0 \'97 a control that alters the number of frames-per-render of the form has not been added
+\b \
+Audio 
+\b0 \'97 no control allowing audio input levels to be mapped to the scale of the form has been implemented.
+\b \
+Mouse
+\b0  \'97 no mouse control has been implemented
+\b \
+Circle 
+\b0 \'97 no output filter restricting the image to a circle has been implemented.
+\b \
+Fog 
+\b0 \'97 no control toggling \'93fog\'94 has been implemented
+\b \
+Cam Tracking 
+\b0 \'97 unsure what this feature did, not implemented.
+\b \
+Depth 
+\b0 \'97 unsure what this feature did, not implemented.
+\b \
+Smooth 
+\b0 \'97 unsure what this feature did, not implemented.
+\b \
+Wireframe 
+\b0 \'97 no wireframe of the glade form has been implemented.
+\b \
+Render Primatives 
+\b0 \'97 no alternative render primitives have been implemented.
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Scale 
+\b0 \'97 the scale control from the original LiveGlide has not yet been implemented.\
+
+\b Travel 
+\b0 \'97 the ability to control the length of each segment has not yet been added, though doing so is trivial.
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Camera Rotation
+\b0  \'97 something in the last set of updates broke this feature, causing the camera to misbehave when rotated.  Since this feature works properly in the previous version, we are hoping this will be an easy fix.\
+
+\b Camera Mode
+\b0  \'97 the option to view the glide form head-on has not been implemented.\
+
+\b Delay
+\b0  \'97 this feature, which allows the user to select which segment the camera will focus on, has not been implemented.\
+
+\b Light controls 
+\b0 \'97 The ability to control the rotation and zoom of the light source has not been implemented, though static lighting has been implemented.\
+
+\b Master Fade in/out
+\b0  \'97 not implemented, though trivial.\
+
+\b Performance Presets
+\b0  \'97 with tweening and fading (interpolation based), not implemented.\
+Mapping Interface \'97 This feature will need to be completely remade in collaboration with DRS, taking into account any performance controllers that she may want to use.\
+}
